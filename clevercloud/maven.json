@@ -1,0 +1,9 @@
+{
+  "build": {
+    "type": "maven",
+    "goal": "-pl quarkus/deployment,quarkus/dist -am -DskipTests clean install"
+  },
+  "deploy": {
+    "jarName": "quarkus/dist/target/..."
+  }
+}
